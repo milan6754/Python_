@@ -1,4 +1,4 @@
-"""#first python code here we go 
+#first python code here we go 
 print("hello world ")
 
 #strings
@@ -30,26 +30,8 @@ print(str1)
 print(str2)
 print(str3)
 print(str4)
-print(result);
-print(result2);
+print(result)
+print(result2)
 print(result3)
-print(result4)"""
+print(result4)
 
-
-class Car:
-    wheel=4
-    def __init__(self,make,model,year):
-        self.make= make 
-        self.model= model
-        self.year = year
-    
-    def car_info(self):
-        print(f"this is made by {self.make} | {self.model} |{self.year}")
-
-car1 = Car("Elon","BMW" ,1997)
-car2 = Car("Milan","Porshe" ,1973)
-
-car1.car_info()
-car2.car_info()
-print(car1.wheel)
-print(car2.wheel)
