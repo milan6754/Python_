@@ -72,5 +72,9 @@ print(vowel("milan"))
 
 #Why is return more powerful than print?
 
+# return is more powerful than print because print is used to show the result to user
+# on the other hand return is used for reusable , from function to function
+
 #When should a function NOT print anything?
+# when you are going to used that function again 
 

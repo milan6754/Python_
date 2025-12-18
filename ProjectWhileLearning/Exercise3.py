@@ -1,4 +1,4 @@
-'''#Sum of numbers 1 → n
+#Sum of numbers 1 → n
 #Ask user n and print sum from 1 to n.
 
 n = int(input("Enter the value of n: "))
@@ -24,7 +24,7 @@ x= int(input("Enter the value of x: "))
 y = int(input("Enter the value of y: "))
 
 for i in range(1,y+1):
-    print(f"{x}*{i}={x*i}")'''
+    print(f"{x}*{i}={x*i}")
 
 #Even/Odd check for list
 #Create a list of numbers, loop through, print which are even/odd

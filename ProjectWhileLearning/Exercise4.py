@@ -89,7 +89,7 @@ while x <6:
 
 for name in list:
     rev = name[::-1]
-    print
+    print(rev)
 
     if name==rev:
         print(f"this is palindromes {name}")

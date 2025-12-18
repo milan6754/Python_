@@ -45,3 +45,6 @@ def table(num):
 
 
 table(20)
+
+#im just building somthing on my own 
+
