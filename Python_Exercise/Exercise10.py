@@ -61,4 +61,5 @@ Answer in words:
 Difference between inheritance vs composition?
 
 Why is polymorphism powerful?
+
 When should you NOT use inheritance?'''
