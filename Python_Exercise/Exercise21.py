@@ -3,14 +3,14 @@ Divide two numbers (a/b) safely
 Catch ZeroDivisionError
 Print "Cannot divide by zero" if error occurs'''
 
-def div(a,b):
+def divided(a,b):
     try:
         div = a/b
         return div
     except ZeroDivisionError:
-        return ("Cannot divided by zero")
+        return ("Cannot divide by zero")
 
-print(div(4,0))
+print(divided(4,0))
 
 '''📝 Exercise 2
 Convert input to integer
@@ -36,7 +36,7 @@ try:
         content = file.read()
         print(content)
 except FileNotFoundError:
-    print("Fine not found")
+    print("File not found")
 
 '''🔥 Mini Challenge (optional)
 Create a function safe_divide(a, b)
