@@ -36,39 +36,50 @@ data["language"]="English"
 
 with open("profile.json","w") as file:
     json.dump(data,file,indent=4)'''
+
 import json
+
 file_name = "profile.json"
 
 def read_task():
-    with open(file_name,"r") as file:
-        return json.load(file)
-    
+    try:
+        with open(file_name, "r") as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return []
 
 def save_task(tasks):
-    with open(file_name,"w") as file:
-        json.dump(tasks,file,indent=4)
-
+    with open(file_name, "w") as file:
+        json.dump(tasks, file, indent=4)
 
 def add_task(task_name):
     tasks = read_task()
-    tasks.append({"task":task_name,"done":False})
+    tasks.append({"task": task_name, "done": False})
     save_task(tasks)
     print("Task Added")
 
 def show_task():
     tasks = read_task()
-    for i , task in enumerate(tasks,1):
+    if not tasks:
+        print("No tasks yet.")
+        return
+
+    for i, task in enumerate(tasks, 1):
         status = "✅" if task["done"] else "❌"
         print(f"{i}. {task['task']} {status}")
-       
 
 def mark_done(index):
     tasks = read_task()
-    tasks[index-1]["done"] = True
+
+    if index < 1 or index > len(tasks):
+        print("Invalid task number")
+        return
+
+    tasks[index - 1]["done"] = True
     save_task(tasks)
     print("Task marked as done.")
 
-        
+# ----------- Simple
 
 
     # ----------- Simple Menu -----------
