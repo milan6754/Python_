@@ -1,0 +1,14 @@
+[
+    {
+        "task": "brush your teeth",
+        "done": true
+    },
+    {
+        "task": "wake up ",
+        "done": false
+    },
+    {
+        "task": "go to gym",
+        "done": false
+    }
+]
